@@ -11,6 +11,6 @@
 
 - [1](https://github.com/sysy66/algorithmNotes-caolv)
 - 22
-  - [2](https://github.com/sysy66/algorithmNotes-caolv)
-  - [3](https://github.com/sysy66/algorithmNotes-caolv)
+  - [2](golang/helloworld.go)
+  - [3](python/bisect.py)
     - 4
