@@ -1,4 +1,4 @@
-# 2614.2614.对角线上的质数
+# 2614.对角线上的质数
 # https://leetcode.cn/problems/prime-in-diagonal/solutions/2216309/python3zhi-shu-shai-bian-li-by-musing-cl-aqpy/
 # lang=python
 
