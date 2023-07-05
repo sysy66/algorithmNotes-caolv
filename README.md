@@ -10,7 +10,8 @@
 ## 目录
 
 - [1](https://github.com/sysy66/algorithmNotes-caolv)
-- 22
-  - [2](golang/helloworld.go)
+- 数学
+  - 质数筛(线性筛/欧拉筛)
+    - [2614.对角线上的质数](python/2614.对角线上的质数.py)
   - [3](python/bisect.py)
-    - 4
+  - [2](golang/helloworld.go)
