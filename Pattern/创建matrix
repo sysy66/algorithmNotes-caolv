@@ -1,0 +1,33 @@
+def algorithm(N):
+    num_matrix = [[0 for j in range(N)] for i in range(N)]
+    node_matrix = [[Node(j) for j in range(N)] for i in range(N)]
+
+作者：Krahets
+链接：https://leetcode.cn/leetbook/read/illustration-of-algorithm/r8ytog/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+void algorithm(int N) {
+    vector<vector<int>> num_matrix;
+    for (int i = 0; i < N; i++) {
+        vector<int> nums;
+        for (int j = 0; j < N; j++) {
+            nums.push_back(0);
+        }
+        num_matrix.push_back(nums);
+    }
+
+    vector<vector<Node*>> node_matrix;
+    for (int i = 0; i < N; i++) {
+        vector<Node*> nodes;
+        for (int j = 0; j < N; j++) {
+            nodes.push_back(new Node(j));
+        }
+        node_matrix.push_back(nodes);
+    }
+}
+
+作者：Krahets
+链接：https://leetcode.cn/leetbook/read/illustration-of-algorithm/r8ytog/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
