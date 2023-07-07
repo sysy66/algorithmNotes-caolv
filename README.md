@@ -9,7 +9,7 @@
 
 ## 目录
 
-- [1](golang/helloworld.go)
+- [helloworld.go](golang/helloworld.go)
 - 模拟
   - [1701.平均等待时间.py](python/1701.平均等待时间.py)
   - [1701.平均等待时间.go](golang/1701.平均等待时间.go)
