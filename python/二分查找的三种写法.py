@@ -37,6 +37,7 @@ def f3(nums, target):
 	return lt
 
 print("start")
+from bisect import bisect_right
 nums = list(range(100))
 for x in range(-100, 200):
 	if not (bisect_right(nums, x) == f1(nums, x) == f2(nums, x) == f3(nums, x)):
