@@ -9,8 +9,9 @@
 
 ## 目录
 
-- [0](python/bisect.py)
 - [1](golang/helloworld.go)
+- 二分
+  - [二分查找的三种写法.py](python/二分查找的三种写法.py)
 - 贪心
   - [2178. 拆分成最多数目的正偶数之和.go](golang/2178.拆分成最多数目的正偶数.go)
 - 数学
