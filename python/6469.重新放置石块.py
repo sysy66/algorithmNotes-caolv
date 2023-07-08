@@ -1,8 +1,8 @@
 # 6469.重新放置石块
-#
+# https://leetcode.cn/problems/relocate-marbles/
 # lang=python
 
-# 解法：逆序遍历
+# 解法：模拟，逆序遍历
 
 # In[1]
 from typing import List

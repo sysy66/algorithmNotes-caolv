@@ -1,5 +1,5 @@
 # 6913.最长交替子序列
-#
+# https://leetcode.cn/problems/longest-alternating-subarray/
 # lang=python
 
 # 解法1：双指针

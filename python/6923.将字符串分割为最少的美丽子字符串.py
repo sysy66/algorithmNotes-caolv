@@ -1,5 +1,5 @@
 # 6923.将字符串分割为最少的美丽子字符串
-#
+# https://leetcode.cn/problems/partition-string-into-minimum-beautiful-substrings/description/
 # lang=python
 
 # 解法1：动态规划
