@@ -11,6 +11,8 @@
 ## 目录
 
 - [helloworld.go](golang/helloworld.go)
+- 逆向思维
+  - [6469.重新放置石块.py](python/6469.重新放置石块.py)
 - 模拟
   - [1701.平均等待时间.py](python/1701.平均等待时间.py)
   - [1701.平均等待时间.go](golang/1701.平均等待时间.go)
