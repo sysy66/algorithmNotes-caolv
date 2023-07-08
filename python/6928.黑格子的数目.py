@@ -11,29 +11,16 @@ from collections import Counter
 
 class Solution:
 	def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
-		coordinates.sort()
-		coordinates.append([m, 0]) # 哨兵？
 		ans = [0] * 5
-		a, b = Counter(), Counter()
-		cur = coordinates[0][0]
+		cnt = Counter()
 		for x, y in coordinates:
-			if x != cur:
-				if cur != 0:
-					for k, v in a.items():
-						if k == -1 or k == n - 1: continue
-						ans[v] += 1
-				if x == cur + 1:
-					a, b = b, Counter()
-				else:
-					for k, v in b.items():
-						if k == -1 or k == n - 1: continue
-						ans[v] += 1
-					a, b = Counter(), Counter()
-				cur = x
-			a[y - 1] += 1
-			a[y] += 1
-			b[y - 1] += 1
-			b[y] += 1
+			cnt[(x, y)] += 1
+			cnt[(x - 1, y)] += 1
+			cnt[(x, y - 1)] += 1
+			cnt[(x - 1, y - 1)] += 1
+		for (x, y), v in cnt.items():
+			if y == -1 or y == n - 1 or x == m - 1 or x == -1: continue
+			ans[v] += 1
 		ans[0] = (m - 1) * (n - 1) - sum(ans)
 		return ans
 
