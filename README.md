@@ -30,7 +30,9 @@
   - 差分数组
     - [6919.使数组中的所有元素都等于零.py](python/6919.使数组中的所有元素都等于零.py)
 
-- [helloworld.go](golang/helloworld.go)
+
+## [helloworld.go](golang/helloworld.go)
+
 - 动态规划
   - [1911.最大子序列交替和.go](golang/1911.最大子序列交替和.go)
 - 模拟
