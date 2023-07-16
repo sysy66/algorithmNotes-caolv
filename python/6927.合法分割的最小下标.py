@@ -3,7 +3,7 @@
 # lang=python
 
 
-# 解法：双指针的简单应用
+# 解法：模拟
 
 import heapq
 from collections import Counter
