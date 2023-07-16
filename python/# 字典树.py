@@ -4,5 +4,6 @@
 
 class Trie:
     def __init__(self):
-        self.is_finished = False
         self.child = dict()
+        self.is_finished = False
+        
