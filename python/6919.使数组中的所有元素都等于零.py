@@ -22,6 +22,7 @@ class Solution:
 
 
 # In[2]
+'''
 class Solution:
     def checkArray(self, nums: List[int], k: int) -> bool:
         n = len(nums)
@@ -37,7 +38,7 @@ class Solution:
                 return False
 
         return True
-
+'''
 
 if __name__ == "__main__":
     import time
