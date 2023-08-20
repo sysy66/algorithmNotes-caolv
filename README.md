@@ -44,7 +44,7 @@
   - 差分数组
     - [6919.使数组中的所有元素都等于零.py](python/6919.使数组中的所有元素都等于零.py)
 - 贪心
-  - ...
+  - ..
 
 
 ## [helloworld.go](golang/helloworld.go)
