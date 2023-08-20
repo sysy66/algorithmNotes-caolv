@@ -1,24 +1,40 @@
 # 6467.找出最长等值子数组
-# https://leetcode.cn/problems/maximize-the-profit-as-the-salesman/description/
+# https://leetcode.cn/problems/find-the-longest-equal-subarray/description/
 # lang=python
 
 
-# 解法: 动态规划
-from bisect import bisect_left
+# 解法: 双端队列
+from collections import defaultdict, deque
 from typing import List
 
+
 class Solution:
-    def maximizeTheProfit(self, n: int, offers: List[List[int]]) -> int:
-        idx = sorted(range(len(offers)), key=lambda x: offers[x][1])
-        a = [0]
-        ends = [-1]
-        for i in idx:
-            s, e, g = offers[i]
-            a.append(a[-1])
-            ends.append(e)
-            j = bisect_left(ends, s) - 1
-            a[-1] = max(a[-1], g + a[j])
-        return a[-1]
+    def longestEqualSubarray(self, nums: List[int], k: int) -> int:
+        cost = [0] * len(nums)
+        v2i = {}
+        gs = defaultdict(list)
+        for i, x in enumerate(nums):
+            if x not in v2i:
+                v2i[x] = i - 1
+            cost[i] = i - v2i[x] - 1
+            v2i[x] = i
+            gs[x].append(i)
+        
+        ans = 1
+        for g in gs.values():
+            if len(g) <= ans:
+                continue
+            q = deque()
+            c = 0
+            for i in g:
+                q.append(i)
+                c += cost[i]
+                while c > k:
+                    q.popleft()
+                    j = q[0]
+                    c -= cost[j]
+                ans = max(ans, len(q))
+        return ans
 
 
 if __name__ == "__main__":
@@ -30,10 +46,10 @@ if __name__ == "__main__":
     func_name = dir(s)[-1]
     func = getattr(s, func_name)
     
-    print(func(n=5, offers=[[0, 0, 1], [0, 2, 2], [1, 3, 2]]))
+    print(func(nums=[1, 3, 2, 3, 1, 3], k=3))
     # 输出：3
-    print(func(n=5, offers=[[0, 0, 1], [0, 2, 10], [1, 3, 2]]))
-    # 输出：10
+    print(func(nums=[1, 1, 2, 2, 1, 1], k=2))
+    # 输出：4
     
     t1 = time.time()
     print(t1 - t0)
