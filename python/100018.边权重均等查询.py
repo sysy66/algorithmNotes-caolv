@@ -37,9 +37,9 @@ class Solution:
                     z = y
                     while pa[z] != z:
                         z = pa[z]
-                    a = [i + j - 2 * k for i, j, k in zip(i2t[x], i2t[y], i2t[z])]
+                    tmp = tuple(i + j - 2 * k for i, j, k in zip(i2t[x], i2t[y], i2t[z]))
                     for idx in qs[x][y]:
-                        ans[idx] = sum(a) - max(a)
+                        ans[idx] = sum(tmp) - max(tmp)
             for zz, ww in grid[x]:
                 if zz != fa:
                     dfs(zz, x, ww)
