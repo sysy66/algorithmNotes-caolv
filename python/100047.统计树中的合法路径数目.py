@@ -7,12 +7,12 @@ from typing import List
 
 
 MAX_RANGE = 10 ** 5 + 1
-is_primes = [True] * MAX_RANGE
+is_prime = [True] * MAX_RANGE
 for i in range(2, MAX_RANGE):
-    if is_primes[i]:
+    if is_prime[i]:
         for j in range(i * i, MAX_RANGE, i):
-            is_primes[j] = False
-is_primes[1] = False
+            is_prime[j] = False
+is_prime[1] = False
 
 
 class Solution:
@@ -26,14 +26,14 @@ class Solution:
         
         def dfs(x, fa):
             nonlocal ans
-            a = 0 if is_primes[x] else 1
+            a = 0 if is_prime[x] else 1
             b = a ^ 1
             for y in grid[x]:
                 if y == fa: continue
                 c, d = dfs(y, x)
                 ans += a * d + b * c
-                a += 0 if is_primes[x] else c
-                b += c if is_primes[x] else d
+                a += 0 if is_prime[x] else c
+                b += c if is_prime[x] else d
             return a, b
         
         dfs(1, 0)
