@@ -13,4 +13,9 @@ while x < (1 << n):
     left = lowbit + x
     right = ((x ^ left) // lowbit) >> 2
     x = left | right
-print(cnt)
+
+
+from math import comb
+if comb(n, k) == cnt:
+    print(f"n = {n}, k = {k}, comb(n, k) = {cnt}")
+    
