@@ -1,5 +1,5 @@
-# Gosper’s Hack
-# Gosper's Hack是一种生成n元集合所有k元子集的算法，它巧妙地利用了位运算。
+# Gosper's Hack.py
+# Gosper's Hack.py是一种生成n元集合所有k元子集的算法，它巧妙地利用了位运算。
 
 k = 3
 n = 5
@@ -8,7 +8,7 @@ x = (1 << k) - 1
 cnt = 0
 while x < (1 << n):
     cnt += 1
-    print(bin(x))
+    print(bin(x)[2:].rjust(n, '0'))
     lowbit = x & -x
     left = lowbit + x
     right = ((x ^ left) // lowbit) >> 2
