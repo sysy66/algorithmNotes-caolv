@@ -14,7 +14,7 @@ func pow(x, n int) int {
 	//result 结果
 	r := 1
 	for e > 0 {
-		if e&1 > 0 {
+		if e&1 == 1 {
 			r *= b
 			r %= MOD
 		}
