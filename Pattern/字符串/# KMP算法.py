@@ -49,8 +49,7 @@ def kmp(query: str, pattern: str) -> bool:
             match += 1
             if match == m - 1:
                 res.append(i - m + 1)
-                i = i - m + 1
-                match = -1
+                match = fail[match]
         i += 1
     return res  #query中，以res里的下标开头，长度为m的子字符串，为pattern
 
