@@ -11,7 +11,10 @@
 ## 目录
 
 - 排序
-  - [冒泡排序_bubble_sort](python/bubble_sort.py)
+  - 冒泡排序
+    - [bubble_sort.py](python/bubble_sort.py)
+  - 并归排序
+    - [327.区间和的个数.py](python/327.区间和的个数.py)
 - 深度优先搜索
   - [100047.统计树中的合法路径数目.py](python/100047.统计树中的合法路径数目.py)
 - 字符串
@@ -63,6 +66,10 @@
 
 ## [helloworld.go](golang/helloworld.go)
 
+- 排序
+
+  - 并归排序
+    - [327.区间和的个数.go](golang/327.区间和的个数.go)
 - 换根DP
   - [834.树中距离之和.go](golang/834.树中距离之和.go)
   - [2581.统计可能的树根数目.go](golang/2581.统计可能的树根数目.go)
