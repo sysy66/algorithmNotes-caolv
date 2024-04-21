@@ -55,7 +55,9 @@
     - [2842.统计一个字符串的k子序列美丽值最大的数目.py](python/2842.统计一个字符串的k子序列美丽值最大的数目.py)
   - 位运算
     - [2897.对数组执行操作使平方和最大.py](python/2897.对数组执行操作使平方和最大.py)
-    - [#Gosper'sHack.py](python/Gosper'sHack.py)
+    - Gosper'sHack
+      - [#Gosper'sHack.py](python/Gosper'sHack.py)
+      - [216.组合总和III.py](python/216.组合总和III.py)
   - 质数筛(欧拉筛/埃氏筛)
     - [2614.对角线上的质数.py](python/2614.对角线上的质数.py)  
   - 快速幂
@@ -88,3 +90,7 @@
 - 图论
   - Dijkstra
     - [3112.访问消失节点的最少时间.go](golang/3112.访问消失节点的最少时间.go)
+- 数学
+  - 位运算
+    - Gosper'sHack
+      - [216.组合总和III.go](golang/216.组合总和III.go)
