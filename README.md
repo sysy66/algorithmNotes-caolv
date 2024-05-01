@@ -11,6 +11,9 @@
 ## 目录
 
 - 排序
+  - 快速排序
+    - [973.最接近原点的K个点.py](python/973.最接近原点的K个点.py)
+    - [2462.雇佣K位工人的总代价.py](python/2462.雇佣K位工人的总代价.py)
   - 冒泡排序
     - [bubble_sort.py](python/bubble_sort.py)
   - 并归排序
